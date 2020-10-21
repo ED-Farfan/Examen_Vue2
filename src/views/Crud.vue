@@ -84,11 +84,11 @@
       transition="dialog-transition"
     >
       <v-card>
-        <v-card-title class="headline grey lighten-2">
-          <h1>Modificar Producto</h1>
+        <v-card-title class="headline indigo darken-4" dark>
+          <h3 class="white--text">Modificar Producto</h3>
         </v-card-title>
 
-        <v-card-text>
+        <v-card-text class="green lighten-5">
           <v-form>
             <v-container class="">
               <v-row>
