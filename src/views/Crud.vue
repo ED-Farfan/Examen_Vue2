@@ -18,14 +18,13 @@
     
     
     <v-dialog
-      v-model="dialog"
-      fullscreen
+      v-model="dialog"      
       color="primary"
       persistent
       max-width="500px"
       transition="dialog-transition"
     >
-      <v-card>
+      <v-card >
         <v-card-title class="headline grey lighten-2">
           Agregar Producto
         </v-card-title>
@@ -78,7 +77,7 @@
     </v-dialog>
     <v-dialog
       v-model="dialog2"
-      fullscreen
+      
       color="primary"
       persistent
       max-width="500px"
@@ -175,7 +174,7 @@ export default {
   },
   computed: {
       Termino(){
-          if(this.nombre=="" || this.precio == 0){
+          if(this.nombre=="" || this.precio <= 0||this.cantidad <= 0){
               return false
           }
           else{
